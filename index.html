@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY PORTFOLIO</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e220c229bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="header">
+<div class="container">
+  
+  <nav>
+    <img src="images/logo.png" class="logo">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">PORTFOLIO</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+  <div class="header-text">
+    <p>BCA Graduate</p>
+    <h1>I'm Aysha <span>Diya</span></h1>
+  </div>
+</div>
+  </div>
+  <!-- -----about---- -->
+  <div class="about">
+<div class="container">
+<div class="row">
+  <div class="col1">
+    <img src="images/pic1.jpg" class="pic1">
+  </div>
+  <div class="col2">
+    <h1 class="title">About ME</h1>
+    <p>I'm Aysha, a BCA graduate, I am extremely interested in gaining knowledge about coding and its diverse aspects. My primary interest lies in creating a webpage, and I am currently working on building my very first portfolio. During my college days, I participated in several IT-related competitions such as hackathons, showcasing my passion for the field.</p>
+<div class="tab-titles">
+  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+  <p class="tab-links" onclick="opentab('education')">Education</p>
+</div>  
+<div class="tab-contents active-tab" id="skills">
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JAVA</li>
+  </ul>
+</div>
+<div class="tab-contents" id="experience">
+  <ul>
+    <li><span>2022 - Current</span><br> Back End Intern at Tensaw Technologies </li>
+    
+  </ul>
+</div>
+<div class="tab-contents" id="education">
+  <ul>
+    <li><span>2023</span><br>Bachelor Of Computer Application at CALICUT</li>
+    <li><span>2019</span><br>Higher Secondary School at DUBAI</li>
+  </ul>
+</div>
+</div>
+</div>
+  </div>
+</div>
+
+<!-- --------------------portfolio------- -->
+<div class="portfolio">
+  <div class="container">
+    <h1 class="title">My Work</h1>
+    <div class="worklist">
+      <div class="work">
+        <img src="images/drive.png">
+        <div class="layer">
+          <h3>Google Drive Clone</h3>
+          <p>Tried to recreate the famous app by GOOGLE</p>
+          <a href="https://codesandbox.io/s/jolly-kalam-fo0fn7?file=/style.css" target="_parent"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/phone.jpg" class="phone">
+        <div class="layer">
+          <h3>My Portfolio</h3>
+          <p>Working on my First EVER Portfolio using HTML,CSS and JS</p>
+          <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/loading1.png">
+        <div class="layer">
+          <h3>More works LOADING</h3>
+          <p>Will be UPLOADED shortly</p>
+          
+      </div>
+    </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+<!-- ----------contact------- -->
+<div class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="title">Contact ME</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>aysha622019@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>0123456789</p>
+        <div class="social-icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/posts/aysha-diya-a925a524a_httpslnkdingeqvpvkn-activity-6990326877114572800-fAwe?trk=public_profile-settings_post_view" target="_parent"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright Aysha. Made with lots of <i class="fa-solid fa-heart"></i> and Effort</p>
+  </div>
+</div>
+
+
+
+
+  <script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+for(tablink of tablinks){
+  tablink.classList.remove("active-link")
+}
+for(tabcontent of tabcontents){
+  tabcontent.classList.remove("active-tab")
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+
+    </script>
+</body>
+</html>
